@@ -34,6 +34,8 @@ gem 'omniauth-google-oauth2'
 
 # mysql2
 gem 'mysql2'
+gem 'sqlite3'
+gem 'pg'
 
 # i18n
 gem 'rails-i18n'
