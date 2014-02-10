@@ -1,4 +1,5 @@
 <h1>Rails4-Kickoff</h1>
+<a href="https://codeclimate.com/github/Jrakesh/rails4-kickoff"><img src="https://codeclimate.com/github/Jrakesh/rails4-kickoff.png" /></a>
 
 <p>This is a <strong>rails v4.0.2</strong> app and can be used as a kickoff platform for your own app. The salient features are:
 <ul>
