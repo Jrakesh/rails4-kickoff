@@ -1,0 +1,19 @@
+/ Main jumbotron for a primary marketing message or call to action
+.jumbotron
+  .container
+    %h1= t('hello')
+    %p= t('app_intro')
+    - if current_user
+      = link_to t('go_to_profile'), profile_path, :class => "btn btn-primary"
+.container
+  / Example row of columns
+  .row
+    .col-md-4
+      %h2 Omniauth
+      %p= t('omniauth_p')
+    .col-md-4
+      %h2 Bootstrap-3
+      %p= t('twitter_bootstrap_p')
+    .col-md-4
+      %h2 I18n
+      %p= t('i18n_p')

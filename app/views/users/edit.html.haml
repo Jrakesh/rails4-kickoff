@@ -1,0 +1,30 @@
+.container
+  = form_for :user, url: update_profile_path, method: :patch, html: { role: "form", class: "form-horizontal" } do |f|
+    %fieldset
+      %legend= t('required_information')
+      - if @user.errors.any?
+        #error_explanation.alert.alert-danger
+          %h2= t('not_saved')
+          %ul
+            - @user.errors.full_messages.each do |msg|
+              %li= msg
+      .form-group
+        = f.label :email, :class => "col-sm-2 control-label"
+        .col-sm-10
+          = f.text_field :email, :class => "form-control", :type => "email", :placeholder => "Email"
+      .form-group
+        = f.label :first_name, :class => "col-sm-2 control-label"
+        .col-sm-10
+          = f.text_field :first_name, :class => "form-control", :type => "text", :placeholder => "First Name"
+      .form-group
+        = f.label :last_name, :class => "col-sm-2 control-label"
+        .col-sm-10
+          = f.text_field :last_name, :class => "form-control", :type => "text", :placeholder => "Last Name"
+      .form-group
+        = f.label :gender, :class => "col-sm-2 control-label"
+        .col-sm-10
+          = f.select :gender, options_for_select(["male", "female"], @user.gender), {:include_blank => "Select Gender"}, {:class => 'form-control'}
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          = f.submit :value => "Save", :class => "btn btn-primary"
+          = link_to "Cancel", root_url, :class => "btn btn-warning"

@@ -1,0 +1,9 @@
+- [:notice, :error, :alert].each do |level|
+  - unless flash[level].blank?
+    #alert_msg{class: "alert alert-#{flash_class(level)} fade in text-center", style: "position:absolute;width: 100%;z-index: 7000;"}
+      %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+      = content_tag :p, flash[level]
+:javascript
+  setTimeout(function() {
+      	$("#alert_msg").alert('close')
+  	}, 3000);

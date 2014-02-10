@@ -1,0 +1,44 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  hello: "Hola Geeks!"
+  project_name: "Rails4-Kickoff"
+  welcome: "Bienvenido/a"
+  en: "English"
+  es: "Español"
+  signin: "Entrar"
+  signout: "Salir"
+  app_intro: "Este es un proyecto v4.0.2 Ruby On Rails y puede ser utilizado como texto modelo para iniciar su propio proyecto."
+  omniauth_p: "Proporciona integración OmniAuth con Facebook, Google y Twitter (para Twitter hay una lógica para redirigir al usuario al paso para completar la información de que Twitter no proporciona)."
+  twitter_bootstrap_p: "También se integra Bootstrap-3, comenzar a personalizar el estilo como por su necesidad!"
+  i18n_p: "Funcionalidad multilingüe - Inglés y español también está disponible (pruebe a cambiar el idioma en el pie de página)."
+  go_to_profile: "Ir a perfil"
+  required_information: "Información requerida"
+  not_saved: "No se pudo guardar"
+  activerecord:
+    models:
+      user: "Usuario"
+    attributes:
+      user:
+        first_name: "Nombre"
+        last_name: "Apellido"
+        gender: "Sexo"
